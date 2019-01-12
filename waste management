@@ -1,0 +1,108 @@
+#include <iostream>
+#include<stdlib.h>
+#include<stdio.h>
+using namespace std;
+void gov()
+{
+        char s[99999],name[30],address[10000],phon[10];
+        cout<<"\nenter the problem\n\n";
+        cout<<"::- ";
+        cin>>s;
+        fflush(stdin);
+        cout<<endl<<endl;
+        cout<<"enter the location where the problem is about wasting\n\n";
+        cout<<"::- ";
+        scanf("%[^\n]s",address);
+        fflush(stdin);
+        cout<<endl<<endl;
+        cout<<"please enter your name  :- ";
+        scanf("%[^\n]s",name);
+        fflush(stdin);
+        cout<<endl<<endl;
+        cout<<"please enter your mobile number  :-  ";
+        scanf("%[^\n]s",phon);
+        fflush(stdin);
+        cout<<"\n\nTO TAKE THE INSTANT ACTION VIA MUNCHI-PARTY ON IT WE ARE SENDING A MASSAGE TO PRIME MINISTER OFFICE AND CHIEF MINISTER OFFICE AND ALSO FOR MUNSHIPARTY OFFICE\n";
+}
+void pri()
+{
+    char s[999999],s1[99999],s2[99999],mob[10],k,amt;
+    cout<<"write your problem below "<<endl;
+    cout<<"::- ";
+    cin>>s;
+    fflush(stdin);
+    cout<<"what can be the requirement to solve the problem write the names only"<<endl;
+    cout<<"::- ";
+    cin>>s1;
+    fflush(stdin);
+    cout<<endl<<"Address ( where the requirement is )"<<endl;
+    cout<<"::- ";
+    cin>>s2;
+    fflush(stdin);
+    cout<<endl<<"please enter your Mobile Number :- ";
+    cin>>mob;
+    cout<<endl<<"If you want do any donation from yourself please answer is (y/n)"<<endl;
+    fflush(stdin);
+    cin>>k;
+    if(k=='y')
+    {
+        cout<<endl<<"please fill the amount :- ";
+        cin>>amt;
+        cout<<endl<<"\t\t** THANKS FOR YOUR GREATE DONATION **"<<endl<<endl;
+    }
+    fflush(stdin);
+    cout<<"provider will take action as soon as on this problem "<<endl;
+}
+void water()
+{
+    cout<<"\n\t\t this is about water waste management\n";
+    gov();
+}
+void solid()
+{
+    cout<<"-------- we can solve this problem in two ways --------\n\n";
+    cout<<"press 1 to government sector \n\n";
+    cout<<"press 2 to private sector \n\n";
+    cout<<"enter your choice :- ";
+    int n;
+    cin>>n;
+    switch(n)
+    {
+        case 1:
+            cout<<"\n\nThis is the government way to solve the problem\n\n";
+            gov();
+            break;
+        case 2:
+            cout<<"\n\nThis is the private way to solve the problem\n\n";
+            pri();
+            break;
+    }
+}
+int main()
+{
+    cout<<"\n-we are going to present a way solve the solid and water waste management idea -\n";
+    int n;
+    while(1)
+    {
+
+        cout<<"\n\n-------READ THESE INSTRUCTIONS--------\n\n";
+        cout<<"press 1 to water waste problem\n\n";
+        cout<<"press 2 to solid waste problem\n\n";
+        cout<<"press 3 to go back \n\n";
+        cout<<"enter your choice :- ";
+        fflush(stdin);
+        cin>>n;
+        switch(n)
+        {
+            case 1:
+                   water();
+                   break;
+            case 2:
+                   solid();
+                   break;
+            case 3:
+                    cout<<"thanks for visit\n\n";
+                    exit(0);
+        }
+    }
+}
